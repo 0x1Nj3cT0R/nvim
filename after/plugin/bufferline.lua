@@ -26,9 +26,9 @@ bufferline.setup({
     diagnostics_indicator = diagnostics_indicator
   },
   highlights = {
-    separator = { guifg = '#1d202f' },
-    separator_selected = { guifg = '#1d202f' },
-    separator_visible = { guifg = '#1d202f' },
-    buffer_selected = { guifg = '#c0caf5' }
+    separator = { fg = '#1d202f' },
+    separator_selected = { fg = '#1d202f' },
+    separator_visible = { fg = '#1d202f' },
+    buffer_selected = { fg = '#c0caf5' }
   }
 })
