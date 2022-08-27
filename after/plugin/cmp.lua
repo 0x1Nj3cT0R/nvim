@@ -19,7 +19,7 @@ local has_words_before = function()
 end
 
 cmp.setup({
-  completion = { completeopt = 'menu,menuone,noinsert', keyword_length = 1 },
+  -- completion = { completeopt = 'menu,menuone,noinsert', keyword_length = 1 },
   experimental = { native_menu = false, ghost_text = false },
   snippet = {
     expand = function(args)
@@ -35,16 +35,6 @@ cmp.setup({
     ['<C-e>'] = cmp.mapping({
       i = cmp.mapping.abort(),
       c = cmp.mapping.close(),
-    }),
-    ['<CR>'] = cmp.mapping({
-      i = cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = false }),
-      c = function(fallback)
-        if cmp.visible() then
-          cmp.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = false })
-        else
-          fallback()
-        end
-      end
     }),
     ['<Tab>'] = cmp.mapping(function(fallback)
       if cmp.visible() then
