@@ -19,7 +19,7 @@ opt.title = true
 opt.pumheight = 10
 opt.pumblend = 15
 opt.wildmode = 'longest:full,full'
-opt.clipboard = 'unnamedplus'
+opt.clipboard:append('unnamedplus)
 opt.fileencoding = 'utf-8'
 opt.spell = false
 opt.spelllang = 'en_us'
