@@ -1,12 +1,4 @@
 local opt = vim.opt
-local g = vim.g
-
-if vim.version().minor < 8 then
-  g.did_load_filetypes = 0
-  g.do_filetype_lua = 1
-end
-
-g.mapleader = ' '
 
 opt.laststatus = 3
 opt.showtabline = 2
