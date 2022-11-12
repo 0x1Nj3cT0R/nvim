@@ -1,12 +1,12 @@
 local utils = require('utils')
 
-local g = vim.g
-
 local map = utils.map
 local nmap = utils.nmap
 local nnoremap = utils.nnoremap
 local vnoremap = utils.vnoremap
 local inoremap = utils.inoremap
+
+local g = vim.g
 
 g.mapleader = ' '
 
