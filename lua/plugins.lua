@@ -68,6 +68,7 @@ return packer.startup(function(use)
   use('L3MON4D3/LuaSnip')
   use('rafamadriz/friendly-snippets')
   use('onsails/lspkind-nvim')
+  use('edluffy/hologram.nvim')
 
   if packer_bootstrap then
     packer.sync()

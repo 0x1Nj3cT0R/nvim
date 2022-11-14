@@ -16,6 +16,7 @@ opt.clipboard:append('unnamedplus')
 opt.fileencoding = 'utf-8'
 opt.spell = false
 opt.spelllang = 'en_us'
+opt.relativenumber = true
 opt.cursorline = true
 opt.swapfile = false
 opt.writebackup = false
