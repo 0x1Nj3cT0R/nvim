@@ -1,4 +1,5 @@
 local opt = vim.opt
+local g = vim.g
 
 opt.laststatus = 3
 opt.showtabline = 2
@@ -11,7 +12,7 @@ opt.title = true
 opt.pumheight = 10
 opt.pumblend = 15
 opt.wildmode = 'longest:full,full'
-opt.clipboard:append('unnamedplus)
+opt.clipboard:append('unnamedplus')
 opt.fileencoding = 'utf-8'
 opt.spell = false
 opt.spelllang = 'en_us'
