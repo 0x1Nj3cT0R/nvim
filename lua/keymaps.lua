@@ -48,8 +48,8 @@ inoremap('<F5>', '<Esc>:set list!<CR>a')
 nnoremap('<F7>', ':set spell!<CR>')
 inoremap('<F7>', '<Esc>:set spell!<CR>a')
 
-nnoremap('<leader>w', ':write!<CR>')
-nnoremap('<leader>q', ':bdelete<CR>')
+nnoremap('<leader>w', ':wall!<CR>')
+nnoremap('<leader>q', ':qall!<CR>')
 nnoremap('<leader>s', ':source<CR>')
 nnoremap('<leader>,', ':let @/=""<CR>')
 
@@ -114,3 +114,7 @@ map('f', '<cmd>lua require(\'hop\').hint_char1({ direction = require(\'hop.hint\
 map('F', '<cmd>lua require(\'hop\').hint_char1({ direction = require(\'hop.hint\').HintDirection.BEFORE_CURSOR, current_line_only = true })<CR>')
 map('t', '<cmd>lua require(\'hop\').hint_char1({ direction = require(\'hop.hint\').HintDirection.AFTER_CURSOR, current_line_only = true, hint_offset = -1 })<CR>')
 map('T', '<cmd>lua require(\'hop\').hint_char1({ direction = require(\'hop.hint\').HintDirection.BEFORE_CURSOR, current_line_only = true, hint_offset = 1 })<CR>')
+
+nnoremap('<F5>', '<cmd>ZenMode<CR>')
+nnoremap('<F11>', '<C-w>|<C-w>_')
+nnoremap('<F12>', '<cmd>Glow!<CR>')

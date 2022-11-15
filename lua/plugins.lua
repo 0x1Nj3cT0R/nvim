@@ -69,6 +69,8 @@ return packer.startup(function(use)
   use('rafamadriz/friendly-snippets')
   use('onsails/lspkind-nvim')
   use('edluffy/hologram.nvim')
+  use('ellisonleao/glow.nvim')
+  use('folke/zen-mode.nvim')
 
   if packer_bootstrap then
     packer.sync()
