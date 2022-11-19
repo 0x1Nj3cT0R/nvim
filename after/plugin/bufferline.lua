@@ -17,7 +17,7 @@ end
 
 bufferline.setup({
   options = {
-    separator_style = 'slant',
+    separator_style = 'thin',
     show_close_icon = false,
     show_buffer_close_icons = false,
     show_tab_indicators = false,

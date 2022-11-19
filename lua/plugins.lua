@@ -34,6 +34,7 @@ packer.init({
 
 return packer.startup(function(use)
   use('wbthomason/packer.nvim')
+  use('alexghergh/nvim-tmux-navigation')
   use('nvim-lua/popup.nvim')
   use('nvim-lua/plenary.nvim')
   use('folke/tokyonight.nvim')

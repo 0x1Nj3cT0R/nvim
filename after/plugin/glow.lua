@@ -5,6 +5,6 @@ end
 
 glow.setup({
   style = 'dark',
-  border = 'rounded',
+  border = 'none',
   width = 120,
 })

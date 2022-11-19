@@ -116,5 +116,6 @@ map('t', '<cmd>lua require(\'hop\').hint_char1({ direction = require(\'hop.hint\
 map('T', '<cmd>lua require(\'hop\').hint_char1({ direction = require(\'hop.hint\').HintDirection.BEFORE_CURSOR, current_line_only = true, hint_offset = 1 })<CR>')
 
 nnoremap('<F5>', '<cmd>ZenMode<CR>')
-nnoremap('<F11>', '<C-w>|<C-w>_')
-nnoremap('<F12>', '<cmd>Glow!<CR>')
+nnoremap('<Left>', ':q<CR>:bprevious<CR><cmd>Glow!<CR><C-w>|<C-w>_')
+nnoremap('<Right>', ':q<CR>:bnext<CR><cmd>Glow!<CR><C-w>|<C-w>_')
+nnoremap('<leader>m', '<cmd>Glow!<CR><C-w>|<C-w>_')
