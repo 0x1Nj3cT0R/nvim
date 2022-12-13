@@ -22,6 +22,10 @@ nnoremap('c', '"_c')
 nnoremap('C', '"_C')
 vnoremap('c', '"_c')
 
+nnoremap('x', '"_x')
+nnoremap('X', '"_X')
+vnoremap('x', '"_x')
+
 nnoremap('<leader>y', '"+y')
 nnoremap('<leader>Y', '"+Y')
 vnoremap('<leader>y', '"+y')
@@ -39,9 +43,6 @@ nnoremap('<C-Right>', ':vertical resize -2<CR>')
 nnoremap('<leader>sh', ':split<CR><C-w>w')
 nnoremap('<leader>sv', ':vsplit<CR><C-w>w')
 
-nnoremap('<F4>', ':set number!<CR>')
-inoremap('<F4>', '<Esc>:set number!<CR>a')
-
 nnoremap('<F8>', ':set list!<CR>')
 inoremap('<F8>', '<Esc>:set list!<CR>a')
 
@@ -49,13 +50,10 @@ nnoremap('<F7>', ':set spell!<CR>')
 inoremap('<F7>', '<Esc>:set spell!<CR>a')
 
 nnoremap('<leader>w', ':write!<CR>')
-nnoremap('<leader>q', ':quit!<CR>')
+nnoremap('<leader>q', ':bdelete!<CR>')
 nnoremap('<leader>W', ':wall!<CR>')
 nnoremap('<leader>Q', ':qall!<CR>')
 nnoremap('<leader>,', ':let @/=""<CR>')
-
-nnoremap('<C-s>', ':write!<CR>')
-inoremap('<C-s>', '<Esc>:write!<CR>a')
 
 inoremap('<C-c>', '<Esc>')
 inoremap('jk', '<Esc>')
@@ -65,8 +63,8 @@ inoremap('jj', '<Esc>')
 vnoremap('K', ':m \'<-2<CR>gv-gv')
 vnoremap('J', ':m \'>+1<CR>gv-gv')
 
-nnoremap('B', 'i<CR><Esc>')
-nnoremap('Y', 'yg$')
+-- nnoremap('B', 'i<CR><Esc>')
+-- nnoremap('Y', 'yg$')
 nnoremap('n', 'nzzzv')
 nnoremap('N', 'Nzzzv')
 nnoremap('J', 'mzJ`z')
@@ -89,17 +87,14 @@ nnoremap('<leader>o', '<cmd>lua vim.diagnostic.open_float()<CR>')
 nnoremap('<leader>v', '<cmd>lua vim.diagnostic.setloclist()<CR>')
 nnoremap('<C-f>', '<cmd>lua vim.lsp.buf.formatting()<CR>')
 vnoremap('<C-f>', '<cmd>lua vim.lsp.buf.range_formatting()<CR>')
-nnoremap('<C-n>', '<cmd>lua vim.diagnostic.goto_prev()<CR>')
-nnoremap('<C-p>', '<cmd>lua vim.diagnostic.goto_next()<CR>')
+-- nnoremap('<C-n>', '<cmd>lua vim.diagnostic.goto_prev()<CR>')
+-- nnoremap('<C-p>', '<cmd>lua vim.diagnostic.goto_next()<CR>')
 
-nnoremap('<S-l>', '<cmd>BufferLineCycleNext<CR>')
-nnoremap('<S-h>', '<cmd>BufferLineCyclePrev<CR>')
+-- nnoremap('<S-l>', '<cmd>BufferLineCycleNext<CR>')
+-- nnoremap('<S-h>', '<cmd>BufferLineCyclePrev<CR>')
 
 nnoremap('<Tab>', '<cmd>BufferLineCycleNext<CR>')
 nnoremap('<S-Tab>', '<cmd>BufferLineCyclePrev<CR>')
-
-nnoremap('<leader>j', '<cmd>HopChar2<CR>')
-nnoremap('<leader>/', '<cmd>HopPattern<CR>')
 
 nnoremap('<leader>e', '<cmd>NvimTreeToggle<CR>')
 
@@ -120,6 +115,6 @@ map('<leader>ht', '<cmd>lua require("hop").hint_char1({ direction = require("hop
 map('<leader>hT', '<cmd>lua require("hop").hint_char1({ direction = require("hop.hint").HintDirection.BEFORE_CURSOR, current_line_only = true, hint_offset = 1 })<CR>')
 
 nnoremap('<F5>', '<cmd>ZenMode<CR>')
-nnoremap('<Left>', ':q<CR>:bprevious<CR><cmd>Glow!<CR><C-w>|<C-w>_')
-nnoremap('<Right>', ':q<CR>:bnext<CR><cmd>Glow!<CR><C-w>|<C-w>_')
-nnoremap('<leader>m', '<cmd>Glow!<CR><C-w>|<C-w>_')
+-- nnoremap('<Left>', ':q<CR>:bprevious<CR><cmd>Glow!<CR><C-w>|<C-w>_')
+-- nnoremap('<Right>', ':q<CR>:bnext<CR><cmd>Glow!<CR><C-w>|<C-w>_')
+-- nnoremap('<leader>m', '<cmd>Glow!<CR><C-w>|<C-w>_')

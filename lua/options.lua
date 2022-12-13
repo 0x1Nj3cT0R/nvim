@@ -1,11 +1,12 @@
 local opt = vim.opt
 local g = vim.g
 
+opt.mouse = ''
 opt.laststatus = 3
 opt.showtabline = 2
 opt.showmode = false
 opt.lazyredraw = true
-opt.scrolloff = 999
+-- opt.scrolloff = 999
 opt.wrap = false
 opt.linebreak = true
 opt.title = true
