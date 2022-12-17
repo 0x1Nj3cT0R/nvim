@@ -10,9 +10,6 @@ local g = vim.g
 
 g.mapleader = ' '
 
--- nmap(';', ':')
--- nnoremap(';;', ';')
-
 nnoremap('j', 'gj')
 nnoremap('k', 'gk')
 
@@ -63,11 +60,12 @@ inoremap('jj', '<Esc>')
 vnoremap('K', ':m \'<-2<CR>gv-gv')
 vnoremap('J', ':m \'>+1<CR>gv-gv')
 
--- nnoremap('B', 'i<CR><Esc>')
--- nnoremap('Y', 'yg$')
+nnoremap('Y', 'yg$')
+nnoremap('J', 'mzJ`z')
+
 nnoremap('n', 'nzzzv')
 nnoremap('N', 'Nzzzv')
-nnoremap('J', 'mzJ`z')
+
 nnoremap('<C-d>', '<C-d>zz')
 nnoremap('<C-u>', '<C-u>zz')
 
@@ -93,18 +91,19 @@ vnoremap('<C-f>', '<cmd>lua vim.lsp.buf.range_formatting()<CR>')
 -- nnoremap('<S-l>', '<cmd>BufferLineCycleNext<CR>')
 -- nnoremap('<S-h>', '<cmd>BufferLineCyclePrev<CR>')
 
+nnoremap('<F5>', '<cmd>ZenMode<CR>')
+nnoremap('<F9>', '<cmd>LazyGit<CR>')
+
 nnoremap('<Tab>', '<cmd>BufferLineCycleNext<CR>')
 nnoremap('<S-Tab>', '<cmd>BufferLineCyclePrev<CR>')
 
 nnoremap('<leader>e', '<cmd>NvimTreeToggle<CR>')
 
-nnoremap('<leader>lg', '<cmd>LazyGit<CR>')
-
-nnoremap('<leader>f', '<cmd>Telescope find_files<CR>')
-nnoremap('<leader>g', '<cmd>Telescope live_grep<CR>')
-nnoremap('<leader>b', '<cmd>Telescope buffers<CR>')
--- nnoremap('<leader>h', '<cmd>Telescope help_tags<CR>')
-nnoremap('<leader>\\', '<cmd>Telescope file_browser<CR>')
+nnoremap('<leader>ff', '<cmd>Telescope find_files<CR>')
+nnoremap('<leader>gf', '<cmd>Telescope git_files<CR>')
+nnoremap('<leader>lg', '<cmd>Telescope live_grep<CR>')
+nnoremap('<leader>b', '<cmd>Telescope buffers initial_mode=normal<CR>')
+nnoremap('<leader>\\', '<cmd>Telescope file_browser initial_mode=normal<CR>')
 
 map('<leader>hw', '<cmd>lua require("hop").hint_words()<CR>')
 map('<leader>hp', '<cmd>lua require("hop").hint_patterns({ direction = require("hop.hint").HintDirection.AFTER_CURSOR })<CR>')
@@ -114,7 +113,6 @@ map('<leader>hF', '<cmd>lua require("hop").hint_char1({ direction = require("hop
 map('<leader>ht', '<cmd>lua require("hop").hint_char1({ direction = require("hop.hint").HintDirection.AFTER_CURSOR, current_line_only = true, hint_offset = -1 })<CR>')
 map('<leader>hT', '<cmd>lua require("hop").hint_char1({ direction = require("hop.hint").HintDirection.BEFORE_CURSOR, current_line_only = true, hint_offset = 1 })<CR>')
 
-nnoremap('<F5>', '<cmd>ZenMode<CR>')
 -- nnoremap('<Left>', ':q<CR>:bprevious<CR><cmd>Glow!<CR><C-w>|<C-w>_')
 -- nnoremap('<Right>', ':q<CR>:bnext<CR><cmd>Glow!<CR><C-w>|<C-w>_')
 -- nnoremap('<leader>m', '<cmd>Glow!<CR><C-w>|<C-w>_')
